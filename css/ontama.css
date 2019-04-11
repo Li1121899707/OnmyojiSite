@@ -1,0 +1,170 @@
+.ontama-menu-title {
+    margin: 55px 20px 20px 20px;
+    font-size: 28px;
+    font-family: 楷体;
+    color: #ac9768;
+    text-align: center;
+}
+
+.ontama-menu-tips {
+    margin: 25px 10px 25px 10px;
+    padding: 20px 10px;
+    font-size: 18px;
+    font-family: 楷体;
+    color: #4e4129;
+    text-align: center;
+    border: 3px #4e4129 dotted;
+}
+
+.ontama-attr {
+    width: 100%;
+    min-height: 500px;
+}
+
+.ontama-attr .ontama-attr-title {
+    margin: 25px 10px 35px 10px;
+    font-family: 楷体;
+    color: #ac9768;
+    font-size: 28px;
+    text-align: center;
+}
+
+.ontama-attr .ontama-attr-main {
+    margin: 25px 10px 25px 10px;
+    font-family: Consolas, 楷体;
+    color: #4e4129;
+    font-size: 20px;
+    text-align: left;
+    line-height: 35px;
+}
+
+.ontama-attr .ontama-attr-main .left-attr {
+    width: 60%;
+    float: left;
+}
+
+.ontama-attr-main .left-attr .text-l {
+    width: 60%;
+    margin: auto;
+}
+
+.ontama-attr .ontama-attr-main .right-attr {
+    width: 38%;
+    float: right;
+    text-align: center;
+}
+
+.ontama-attr-main .right-attr .text-r {
+    width: 60%;
+    margin: auto;
+}
+
+.ontama-attr .ontama-attr-main .attrs {
+    padding: 25px 50px 25px 50px;
+    width: 100%;
+    text-align: left;
+    float: left;
+}
+
+.ontama-all-title {
+    margin: 25px 10px 25px 10px;
+    font-family: 楷体;
+    color: #ac9768;
+    font-size: 28px;
+    text-align: center;
+}
+
+.ontama-all-main {
+    min-height: 500px;
+    padding: 5px 0 10px 50px;
+    color: #4e4129;
+    font-size: 18px;
+}
+
+.ontama-all-main .purpleOntamas {
+    width: 80px;
+    height: 80px;
+    margin: 10px 10px 10px 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.ontama-all-main .yellowOntamas {
+    width: 80px;
+    height: 80px;
+    margin: 10px 10px 10px 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.ontama-all-main .yellowOntamas-six {
+    width: 80px;
+    height: 80px;
+    margin: 10px 10px 10px 10px;
+    float: left;
+    cursor: pointer;
+
+    color: #4e4129;
+
+    background: linear-gradient(to left, #a99362, #a99362) left top no-repeat,
+    linear-gradient(to bottom, #a99362, #a99362) left top no-repeat,
+    linear-gradient(to left, #a99362, #a99362) right top no-repeat,
+    linear-gradient(to bottom, #a99362, #a99362) right top no-repeat,
+    linear-gradient(to left, #a99362, #a99362) left bottom no-repeat,
+    linear-gradient(to bottom, #a99362, #a99362) left bottom no-repeat,
+    linear-gradient(to left, #a99362, #a99362) right bottom no-repeat,
+    linear-gradient(to left, #a99362, #a99362) right bottom no-repeat;
+    background-size: 2px 20px, 20px 2px, 2px 20px, 20px 2px;
+
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.ontama-all-main .yellowOntamas-six:hover{
+    color: white;
+    background-color: #a99362;
+}
+
+.shining-six {
+    box-shadow: 0 0 80px #f3b25e;
+}
+
+.shining-four {
+    box-shadow: 0 0 10px rgb(143, 29, 120);;
+}
+
+.shining-five {
+    box-shadow: 0 0 20px #a99362;
+}
+
+.ontama-all-main .purpleOntamas .title {
+    width: 100%;
+    height: 20px;
+    font-size: 18px;
+    font-family: Consolas, 楷体;
+    margin: 5px 0 5px 0;
+    text-align: center;
+    color: rgb(143, 29, 120);
+}
+
+.ontama-all-main .yellowOntamas .title {
+    width: 100%;
+    height: 20px;
+    font-size: 18px;
+    font-family: Consolas, 楷体;
+    margin: 5px 0 5px 0;
+    text-align: center;
+    color: #4e4129;
+}
+
+.ontama-all-main .yellowOntamas-six .title {
+    width: 100%;
+    margin: 1px 0 1px 0;
+    font-size: 18px;
+    font-family: Consolas, 楷体;
+    text-align: center;
+
+}

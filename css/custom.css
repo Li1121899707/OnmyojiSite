@@ -1,0 +1,145 @@
+/*仿外观设计*/
+
+.mainBox{
+    position: relative;
+    box-sizing: border-box;
+    width: available;
+    min-height: 600px;
+    background: url("../img/mainBackground.jpg") 50% 0 no-repeat;
+    border: 5px solid #a99362;
+    margin: 0 50px 50px 50px;
+    font-family: 楷体;
+}
+
+.largeContent {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background-image: url("../img/background.jpg");
+    width: 100%;
+    height: -webkit-fill-available;
+}
+
+.header{
+    font-family: Consolas,楷体;
+    font-size: 16px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 50px 5px 50px;
+    color: #ac9768;
+
+}
+
+.header .btn-home{
+    padding-left: 30px;
+    color: #ac9768;
+    background: url("../img/home.png") 0 50% no-repeat;
+    display: inline;
+    cursor: pointer;
+}
+
+.header .btn-qrcode{
+    padding-left: 60px;
+    margin-left: 30px;
+    color: #ac9768;
+    background: url("../img/qrcode.png") 0 50% no-repeat;
+    display: inline;
+    cursor: pointer;
+}
+
+.footer{
+    text-align: center;
+    font-family: Consolas,楷体;
+    font-size: 18px;
+    width: 100%;
+    height: 30px;
+    margin-top: 35px;
+    color: #ac9768;
+}
+
+.cloud-l, .cloud-r {
+    position: absolute;
+    bottom: 0;
+    width: 500px;
+    height: 325px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.cloud-r {
+    right: 0;
+    background-image: url("../img/cloud_right.png");
+}
+
+.cloud-l {
+    left: 0;
+    background-image: url("../img/cloud_left.png");
+}
+
+/*隐藏滚动条，仅限于Chrome*/
+::-webkit-scrollbar {
+    width: 0;   /* 滚动条宽度为0 */
+    height: 0; /* 滚动条高度为0 */
+    display: none; /* 滚动条隐藏 */
+}
+
+/* 淡入 */
+@keyframes fade-in {
+    0% {opacity: 0;}/*初始状态 透明度为0*/
+    40% {opacity: 0;}/*过渡状态 透明度为0*/
+    100% {opacity: 1;}/*结束状态 透明度为1*/
+}
+@-webkit-keyframes fade-in {/*针对webkit内核*/
+    0% {opacity: 0;}
+    40% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* 移动 */
+@keyframes move {
+    0% {top: -30px;}
+    100% {top:0px;}
+}
+
+@-webkit-keyframes move {
+    0% {top: -30px;}
+    100% {top:0px;}
+}
+
+
+.about {
+    padding: 50px 50px 50px 50px;
+    font-size: 20px;
+    font-family: Consolas, 楷体;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    overflow-x:hidden;
+    overflow-y:auto;
+    z-index: 2;
+    position: relative;
+    animation: fade-in;/*动画名称*/
+    animation-duration: 1.5s;/*动画持续时间*/
+    -webkit-animation:fade-in 1.5s , move 2s alternate;/*针对webkit内核*/
+}
+
+
+.about .aboutTitle{
+    font-size: 36px;
+    color: #ac9768;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about .aboutContent{
+}
+
+.about .updateTitle {
+    text-align: left;
+    font-size: 24px;
+    color: #ac9768;
+    padding-top: 10px;
+}
+
+.about .update {
+    text-align: left;
+}

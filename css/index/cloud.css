@@ -1,0 +1,117 @@
+
+/* 淡入 */
+@keyframes fade-in-cloud-l {
+    0% {opacity: 0;}/*初始状态 透明度为0*/
+    40% {opacity: 0;}/*过渡状态 透明度为0*/
+    100% {opacity: 1;}/*结束状态 透明度为1*/
+}
+@-webkit-keyframes fade-in-cloud-l {/*针对webkit内核*/
+    0% {opacity: 0;}
+    40% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* 移动 */
+@keyframes move-cloud-l {
+    0% {left: -30px;}
+    100% {right:0px;}
+}
+
+@-webkit-keyframes move-cloud-l {
+    0% {left: -30px;}
+    100% {right:0px;}
+}
+
+@keyframes fade-in-cloud-r {
+    0% {opacity: 0;}/*初始状态 透明度为0*/
+    40% {opacity: 0;}/*过渡状态 透明度为0*/
+    100% {opacity: 1;}/*结束状态 透明度为1*/
+}
+@-webkit-keyframes fade-in-cloud-r {/*针对webkit内核*/
+    0% {opacity: 0;}
+    40% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+div {
+    display: block;
+
+}
+
+.animate .cloud-left-1, .animate .cloud-left-2, .animate .line-left, .animate .logo, .animate .cloud-right-1, .animate .cloud-right-2, .animate .line-right, .animate .slogan {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.animate .circle1, .animate .circle2, .animate .circle3, .animate .circle4, .animate .water, .animate .cloud-left-1, .animate .cloud-left-2, .animate .cloud-right-1, .animate .cloud-right-2, .animate .shadow, .animate .logo, .animate .slogan, .animate .nav {
+    opacity: 1;
+}
+
+.animate .cloud-left-1, .animate .cloud-right-1, .animate .water {
+    transition: all 1s ease;
+}
+
+.main .cloud-left-1, .main .cloud-left-2, .main .line-left, .main .logo {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.layer .cloud-left-1 {
+    left: 0;
+    background-image: url("../../img/cloud_left_1.png");
+    animation: fade-in-cloud-l;/*动画名称*/
+    animation-duration: 1.5s;/*动画持续时间*/
+    -webkit-animation:fade-in-cloud-l 1.5s , move-cloud-l 2s alternate;/*针对webkit内核*/
+}
+
+.layer .cloud-left-1, .layer .cloud-left-2, .layer .cloud-right-1, .layer .cloud-right-2 {
+    position: absolute;
+    top: 0;
+    width: 400px;
+    height: 220px;
+    background-repeat: no-repeat;
+}
+
+
+
+.animate .cloud-left-2, .animate .cloud-right-2 {
+    transition: all 1s .5s ease;
+}
+
+.layer .cloud-left-2 {
+    left: 0;
+    background-image: url("../../img/cloud_left_2.png");
+
+    animation: fade-in-cloud-l;/*动画名称*/
+    animation-duration: 1.5s;/*动画持续时间*/
+    -webkit-animation:fade-in-cloud-l 1.5s , move-cloud-l 2s alternate;/*针对webkit内核*/
+}
+
+
+.layer .cloud-right-1 {
+    right: 0;
+    background-image: url("../../img/cloud_right_1.png");
+
+    animation: fade-in-cloud-r;/*动画名称*/
+    animation-duration: 1.5s;/*动画持续时间*/
+    -webkit-animation:fade-in-cloud-r 1.5s ;
+}
+
+.layer .cloud-right-2 {
+    right: 0;
+    background-image: url("../../img/cloud_right_2.png");
+
+    animation: fade-in-cloud-r;/*动画名称*/
+    animation-duration: 1.5s;/*动画持续时间*/
+    -webkit-animation:fade-in-cloud-r 1.5s ;
+}
+
+

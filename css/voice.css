@@ -1,0 +1,102 @@
+.voice-select{
+    padding-top: 25px;
+    padding-left: 10px;
+    animation: fade-in;/*动画名称*/
+    animation-duration: 1.5s;/*动画持续时间*/
+    -webkit-animation:fade-in 1.5s;/*针对webkit内核*/
+}
+
+.voice-main{
+    width: 100%;
+    height: fit-content;
+    font-family: Consolas, 楷体;
+}
+
+.voice-main .title{
+    padding: 25px;
+    text-align: center;
+    font-size: 36px;
+    color:  #ac9768;
+}
+
+.voice-main .text{
+    margin: auto;
+    width: 55%;
+    text-align: left;
+    font-size: 18px;
+    color: #4e4129;
+}
+
+.voice-main .voice-tip{
+    width: 72%;
+    text-align: left;
+    font-size: 18px;
+    color: #4e4129;
+    margin: auto;
+    padding-top: 5px;
+}
+
+
+.voice-main .voice-tip-2{
+    width: 72%;
+    text-align: left;
+    font-size: 22px;
+    color: #4e4129;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.voice-nation{
+    width: 100%;
+    height: fit-content;
+    font-family: Consolas, 楷体;
+    text-align: center;
+}
+
+.voice-nation .title{
+    padding: 25px;
+    font-size: 52px;
+    color:  #ac9768;
+}
+
+.voice-nation .voice-jp{
+    padding: 25px;
+    font-size: 32px;
+    color:  #4e4129;
+    margin: 0 5px 20px 0;
+    background: rgba(240, 235, 197, 0.8);
+}
+
+.voice-nation .voice-zh{
+    padding: 25px;
+    font-size: 32px;
+    color:  #4e4129;
+    margin: 20px 5px 20px 0;
+    background: rgba(240, 235, 197, 0.8);
+}
+
+.voice-nation .voice-ro{
+    padding: 25px;
+    font-size: 22px;
+    color:  #4e4129;
+    margin: 20px 5px 20px 0;
+    background: rgba(240, 235, 197, 0.8);
+    font-family: 华文新魏;
+}
+
+.voice-page{
+    font-family: Consolas;
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    padding-top: 20px;
+    color: #ac9768;
+}
+
+.voice-page .a {
+    width: 5px;
+    padding: 3px;
+    display: inline;
+    cursor: pointer;
+}

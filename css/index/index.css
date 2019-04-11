@@ -1,0 +1,190 @@
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+section {
+    padding: 0 2em;
+    text-align: center;
+}
+
+section h2 {
+    color: #a99362;
+    font-weight: 300;
+    font-size: 2.5em;
+    padding: 0.4em 0;
+}
+
+.box {
+    width: 300px;
+    height: 460px;
+    position: relative;
+    background: rgba(255, 255, 255, 1);
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #2c3e50;
+    box-shadow: inset 0 0 0 3px #2c3e50;
+    -webkit-transition: background 0.4s 0.5s;
+    transition: background 0.4s 0.5s;
+}
+
+.box:hover {
+    background: rgba(255, 255, 255, 0);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.box h3 {
+    font-family: "Ruthie", cursive;
+    font-size: 90px;
+    line-height: 370px;
+    margin: 0;
+    font-weight: 400;
+    width: 100%;
+}
+
+.box span {
+    display: block;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding: 5px;
+    font-family: 楷体;
+}
+
+.box h3,
+.box span {
+    -webkit-transition: color 0.4s 0.5s;
+    transition: color 0.4s 0.5s;
+}
+
+.box:hover h3,
+.box:hover span {
+    color: #fff;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.box svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.box svg line {
+    stroke-width: 3;
+    stroke: #ecf0f1;
+    fill: none;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+
+.box:hover svg line {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.box svg line.top,
+.box svg line.bottom {
+    stroke-dasharray: 330 240;
+}
+
+.box svg line.left,
+.box svg line.right {
+    stroke-dasharray: 490 400;
+}
+
+.box:hover svg line.top {
+    -webkit-transform: translateX(-600px);
+    transform: translateX(-600px);
+}
+
+.box:hover svg line.bottom {
+    -webkit-transform: translateX(600px);
+    transform: translateX(600px);
+}
+
+.box:hover svg line.left {
+    -webkit-transform: translateY(920px);
+    transform: translateY(920px);
+}
+
+.box:hover svg line.right {
+    -webkit-transform: translateY(-920px);
+    transform: translateY(-920px);
+}
+
+/* Alternatives */
+
+/* Frame */
+.demo .box {
+    background: rgba(169, 147, 98, 1);
+    color: #fff;
+    box-shadow: none;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+    animation: fade-in; /*动画名称*/
+    animation-duration: 1.5s; /*动画持续时间*/
+    -webkit-animation: fade-in 1.5s, move 2s alternate; /*针对webkit内核*/
+}
+
+.demo h2 {
+    animation: fade-in; /*动画名称*/
+    animation-duration: 1.5s; /*动画持续时间*/
+    -webkit-animation: fade-in 1.5s, move 2s alternate; /*针对webkit内核*/
+}
+
+.demo .box:hover {
+    /*background: rgba(114, 83, 52, 1);*/
+    background: rgba(78, 65, 41, 1);
+}
+
+.demo .box h2 h3,
+.demo .box span {
+    -webkit-transition: none;
+    transition: none;
+}
+
+.demo .box svg line {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.demo .box:hover svg line {
+    stroke-width: 10;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.demo .box:hover svg line.top {
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+}
+
+.demo .box:hover svg line.bottom {
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+}
+
+.demo .box:hover svg line.left {
+    -webkit-transform: translateY(460px);
+    transform: translateY(460px);
+}
+
+.demo .box:hover svg line.right {
+    -webkit-transform: translateY(-460px);
+    transform: translateY(-460px);
+}

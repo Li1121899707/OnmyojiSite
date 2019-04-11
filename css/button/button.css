@@ -1,0 +1,98 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+
+.ui-box {
+    text-decoration: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    position: relative;
+    vertical-align: baseline;
+    padding: 10px;
+    font-family: 楷体;
+    background: rgba(240, 235, 197, 0.8);
+}
+
+.bottom-inOutSpread:before, .bottom-inOutSpread:after, .bottom-inOutSpread > .ui-border-element:before, .bottom-inOutSpread > .ui-border-element:after {
+    content: '';
+    position: absolute;
+
+}
+
+.bottom-inOutSpread:after {
+    border-bottom: 2px solid #333;
+    left: 51%;
+    right: 51%;
+    bottom: 0px;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+    -moz-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+    -o-transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+    transition-timing-function: cubic-bezier(0, 0.98, 0.51, 0.93);
+    -webkit-transition-duration: 200ms;
+    -moz-transition-duration: 200ms;
+    -o-transition-duration: 200ms;
+    transition-duration: 200ms;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.bottom-inOutSpread:hover:after {
+    left: 0%;
+    right: 0%;
+}
+
+.bottom-inOutSpread:not(:hover):after {
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.box {
+    padding: 0;
+    animation: fade-in;/*动画名称*/
+    animation-duration: 1.5s;/*动画持续时间*/
+    -webkit-animation:fade-in 1.5s , move 2s alternate;/*针对webkit内核*/
+}
+
+a.ui-box {
+    text-decoration: none;
+    color: rgb(78, 65, 41);
+}
+
+.box header {
+    text-align: center;
+    background: rgb(172, 151, 104);
+    margin: 50px 50px 10px 50px;
+    padding: 10px 0;
+    color: rgb(78, 65, 41);
+    border-radius: 3px;
+    font-size: 24px;
+    font-family: 楷体;
+}
+
+.box article {
+    padding: 8px 0;
+    text-align: center;
+}
+
+.box article a {
+    display: inline-block;
+    text-align: center;
+    padding: 2px 20px 2px 20px;
+    transition: all 1s;
+    border: 1px #ac9768 solid;
+}
+
+.box article a:hover {
+    background-color: #ac9768;
+    color: white;
+}
+

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>阴阳师魂十模拟</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- All css -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/wave/wave_demo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/wave/menu_wave.css"/>
+    <script src="js/waves/snap.svg-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/custom.css"/>
+    <link rel="stylesheet" type="text/css" href="css/voice.css"/>
+
+    <!-- button -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <link href="css/button/button.css" rel="stylesheet"/>
+
+    <link href="css/button/select2.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- nav bar start -->
+<div class="menu-wrap">
+    <nav class="menu">
+        <div class="icon-list">
+            <a href="#"><span>模拟抽卡</span></a>
+            <a href="yys_voice_list.html"><span>式神台词语音</span></a>
+            <a href="yys_ontama_list.html"><span>御魂模拟器</span></a>
+            <a href="yys_about.html"><span>关于</span></a>
+        </div>
+    </nav>
+    <button class="close-button" id="close-button">导航</button>
+    <div class="morph-shape" id="morph-shape"
+         data-morph-open="M0,100h1000V0c0,0-136.938,0-224,0C583,0,610.924,0,498,0C387,0,395,0,249,0C118,0,0,0,0,0V100z">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1000 100"
+             preserveAspectRatio="none">
+            <path d="M0,100h1000l0,0c0,0-136.938,0-224,0c-193,0-170.235-1.256-278-35C399,34,395,0,249,0C118,0,0,100,0,100L0,100z"/>
+        </svg>
+    </div>
+</div>
+<!-- nav bar end -->
+<!-- menu button start -->
+<button class="menu-button" id="open-button">导航</button>
+<!-- menu button end -->
+
+<!-- content start. If the html doesn't have this content-wrap class, menu will not disappear when we
+click the blank! -->
+<div class="content-wrap">
+    <div class="col-md-12">
+        <div class="header">
+            <div class="btn-home col-lg-offset-9 col-md-1" onclick="window.location.href='yys_index.html'">
+                回到主页
+            </div>
+            |
+            <div class="btn-qrcode">
+            </div>
+        </div>
+        <div class="mainBox">
+            <div class="col-md-2">
+                <div class="voice-select ">
+                    <select class="form-control select select-warning select-block mbl">
+                        <optgroup label="稀有度">
+                            <option value="0">请选择式神</option>
+                        </optgroup>
+                        <optgroup label="SP">
+                            <option value="0">少羽大天狗</option>
+                        </optgroup>
+                        <optgroup label="SSR绝版限定">
+                            <option value="0">奴良陆生</option>
+                            <option value="0">卖药郎</option>
+                            <option value="0">鬼灯</option>
+                            <option value="0">犬夜叉</option>
+                            <option value="0">杀生丸</option>
+                        </optgroup>
+                        <optgroup label="SSR">
+                            <option value="1">玉藻前</option>
+                            <option value="2">面灵气</option>
+                        </optgroup>
+                        <optgroup label="SR">
+
+                        </optgroup>
+                        <optgroup label="R">
+
+                        </optgroup>
+                        <optgroup label="N">
+
+                        </optgroup>
+                        <optgroup label="呱">
+
+                        </optgroup>
+                    </select>
+                    <!-- 搜索框 结束 -->
+                </div>
+
+                <section class="box">
+                    <article><a href='' class='ui-box bottom-inOutSpread'>点击 </a></article>
+                    <article><a href='' class='ui-box bottom-inOutSpread'>出场 </a></article>
+                    <article><a href='' class='ui-box bottom-inOutSpread'>受击 </a></article>
+                    <article><a href='' class='ui-box bottom-inOutSpread'>死亡 </a></article>
+                    <article><a href='' class='ui-box bottom-inOutSpread'>技能1 </a></article>
+                    <article><a href='' class='ui-box bottom-inOutSpread'>技能2 </a></article>
+                    <article><a href='' class='ui-box bottom-inOutSpread'>技能3 </a></article>
+                </section>
+
+                <div class="voice-page">
+                    <div class="a">
+                        1
+                    </div>
+                    <div class="a">
+                        1
+                    </div>
+                    <div class="a">
+                        1
+                    </div>
+                    <div class="a">
+                        1
+                    </div>
+                    <div class="a">
+                        1
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col-md-4">
+                <div class="voice-main">
+                    <div class="title">
+                        阴阳师式神语音
+                    </div>
+                    <div class="text">
+                        稀有度：SSR
+                        <p></p>
+                        日文名：たまものまえ
+                        <p></p>
+                        英文名：Tamaemma
+                        <P></P>
+                        声优：朴路美
+                        <p></p>
+                        当前技能：技能三
+                        <p></p>
+                        觉醒：觉醒后
+                        <p></p>
+                        技能版本：版本 1
+                        <p></p>
+                        播放音频：<img onclick="playMusic()" style="cursor:pointer" src="img/music-32.png"/>
+                        <p></p>
+                    </div>
+                    <div class="voice-tip-2">
+                        点击共 个版本,请在左侧选择
+                    </div>
+
+                    <div class="voice-tip">
+                        右侧为式神语音日文、中文、罗马音。
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="voice-nation">
+                    <div class="title">
+                        面灵气
+                    </div>
+                    <div class="voice-jp">
+                        旺盛な好奇心は時に命を奪うこともある
+                    </div>
+                    <div class="voice-zh">
+                        旺盛的好奇心有时候也会夺走生命
+                    </div>
+                    <div class="voice-ro">
+                        Ousei na koukishin wa tokini inochi wo ubau koto mo aru
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            © Liysuzy | <a href="mailto:Li1121899707@163.com" style="color: #ac9768"><i>Li1121899707@163.com</i></a>
+            |
+            since
+            2018 | <a href="yys_about.html" style="color: #ac9768">本网站仅用于个人交流！网站资源版权归网易所有！</a>
+        </div>
+    </div>
+</div><!-- /content-wrap -->
+<!-- content end -->
+
+<!-- jQuery & js -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/waves/classie.js"></script>
+<script src="js/waves/main3.js"></script>
+<script src="js/select2.js"></script>
+
+<script>
+    $("select").select2({dropdownCssClass: 'dropdown-inverse'});
+</script>
+<script>
+    function playMusic() {
+        var player = document.getElementById('musicAudio');
+        player.play();
+    }
+</script>
+
+</body>
+</html>
